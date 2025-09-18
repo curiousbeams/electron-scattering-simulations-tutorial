@@ -8,9 +8,9 @@ numbering:
 
 ## Scanning Simulations
 
-In the previous sections, we investigated electron scattering simulations using different approximations and algorithms with respective strengths and weaknesses.
-These all provided us with the electron exit wave $\psi^{\mathrm{exit}}_{\bm{R}}(\bm{r})$ subject to an incident convergent probe illumination, $\psi^{\mathrm{in}}_{\bm{R}}(\bm{r})$, centered at position $\bm{R}$.
-In order to simulate a STEM experiment we simply perform electron scattering simulations for varying prove positions.
+In the previous sections, we investigated electron scattering simulations using the multislice approximation.
+This provides us with the electron exit wave $\psi^{\mathrm{exit}}_{\bm{R}}(\bm{r})$ subject to an incident convergent probe illumination, $\psi^{\mathrm{in}}_{\bm{R}}(\bm{r})$, centered at position $\bm{R}$.
+In order to simulate a STEM experiment we simply perform electron scattering simulations for varying probe positions.
 
 In `abtem`, there are a number of ways to specify the path that the scanning probe takes.
 Most notably, we can:
@@ -52,7 +52,7 @@ Note that:
 - in-between atomic columns, $\left|R\right|\sim 1.5\AA$, the detected bright field intensity is almost unity, suggesting the direct beam passes by without scattering.
 - Over atomic columns, $\left|R\right|=0$, the bright field intensity drops by ~8%.
   - This intensity if mostly transferred to the middle-angle annular dark field detector.
-- The signal in the high-angle annular detector is the easiest to interpet
+- The signal in the high-angle annular detector is the easiest to interpret
   - However, less than 1 in 10,000 electrons are detected, making it very dose inefficient.
 
 ```{figure} #app:detectors_monolithic_line
@@ -64,7 +64,6 @@ Monolithic detector line scans.
 
 Similarly, [](#detectors_grid_fig) plots the result of detecting the exit wave along a raster grid of positions.
 The observations above generalize to these results, but note further that weakly-scattering atomic columns, such as the Oxygen columns on the grid faces are completely lost in the annular dark field scans.
-We will investigate this lack of sensitivity to light atoms further in [](#phase_problem_page).
 
 ```{figure} #app:detectors_monolithic_grid
 :label: detectors_grid_fig
