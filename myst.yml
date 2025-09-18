@@ -1,7 +1,7 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 version: 1
 project:
-  id: gvarnavides-electron-scattering-simulations-tutorial
+  id: curiousbeams-electron-scattering-simulations-tutorial
   title: Open Source Electron Scattering Simulations Tutorial
   short_title: Electron Scattering Simulations Tutorial
   description: Interactive tutorial on open-source electron scattering simulations for high-energy electrons, given by Georgios Varnavides.
@@ -10,7 +10,7 @@ project:
     - Electron Scattering
     - Multislice
     - Blochwaves
-  github: https://github.com/gvarnavi/electron-scattering-simulations-tutorial
+  github: https://github.com/curiousbeams/electron-scattering-simulations-tutorial
   date: 2025-09-19
   requirements:
     - Dockerfile
