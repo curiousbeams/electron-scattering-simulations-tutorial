@@ -1,0 +1,62 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: gvarnavides-electron-scattering-simulations-tutorial
+  title: Open Source Electron Scattering Simulations Tutorial
+  short_title: Electron Scattering Simulations Tutorial
+  description: Interactive tutorial on open-source electron scattering simulations for high-energy electrons, given by Georgios Varnavides.
+  keywords:
+    - Electron Microscopy
+    - Electron Scattering
+    - Multislice
+    - Blochwaves
+  github: https://github.com/gvarnavi/electron-scattering-simulations-tutorial
+  date: 2025-09-19
+  requirements:
+    - Dockerfile
+    - requirements.txt
+  resources:
+    - 'notebooks/**/*'
+  authors:
+    - id: gvarnavides
+      name: Georgios Varnavides
+      email: g.varnavides@tudelft.nl
+      orcid: 0000-0001-8338-3323
+      affiliations:
+        - id: imphys
+          department: Imaging Physics
+          institution: Delft University of Technology
+          address: Lorentzweg 1, 2628 CJ, Delft, Netherlands
+          ror: 02e2c7k09
+  abbreviations:
+    TEM: transmission electron microscopy
+    HRTEM: high resolution transmission electron microscopy
+    STEM: scanning transmission electron microscopy
+    4D-STEM: four dimensional scanning transmission electron microscopy
+    4DSTEM: four dimensional scanning transmission electron microscopy
+    BF: bright field
+    DF: dark field
+    HAADF: high angle annular dark field
+    FFT: fast Fourier transform
+    PCI: phase contrast imaging
+    DPC: differential phase contrast
+    SSB: single side-band
+    WDD: Wigner distribution deconvolution
+    tcBF: tilt corrected bright field
+    IAM: independent atom model
+    ASE: atomic simulation environment
+    PRISM: planewave reciprocal-space interpolated scattering matrix
+    CBED: converged beam electron diffraction
+    PACBED: position averaged converged beam electron diffraction
+    PED: precession electron diffraction
+  jupyter: true
+  # jupyter:
+  #   server:
+  #     url: 'http://localhost:8888'
+  #     token: '512ac78f14e1141db1fac17e8b4099c1e5bc7d589518b38c'
+site:
+  template: book-theme
+  options:
+    favicon: ./figures/curious_beams_blueprint_refined_500x300-optimized_square.png
+    logo: ./figures/curious_beams_blueprint_refined_500x300-optimized_square.png
+    logo_text: Curious Beams Lab
